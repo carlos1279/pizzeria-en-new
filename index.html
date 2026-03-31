@@ -9,7 +9,7 @@
   <!-- ============================================================
        SECURITY HEADERS
        ============================================================ -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; img-src 'self' data: https: blob: https://*.unsplash.com https://*.manuscdn.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; connect-src 'self' https:; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; media-src 'self' https: blob:;" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta http-equiv="X-Frame-Options" content="DENY" />
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -257,9 +257,9 @@
   <section id="home" class="relative min-h-screen flex items-center pt-20 overflow-hidden">
     <!-- Video Background -->
     <div class="video-bg-container">
-      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?q=80&w=2070" preload="auto" webkit-playsinline="true">
+      <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60" preload="auto" webkit-playsinline="true" style="background: url('https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;">
         <source src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663472152618/JHMxQbvCRZOJhYSN.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <img src="https://images.unsplash.com/photo-1574071318508-1cdbad80ad38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=60" alt="Pizza Background" style="width: 100%; height: 100%; object-fit: cover;" />
       </video>
       <div class="video-overlay"></div>
       <div class="absolute inset-0 hero-pattern z-[2]"></div>
@@ -293,7 +293,7 @@
         <!-- Margherita DOP -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Classic</div>
-          <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1000" alt="Margherita DOP" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Margherita DOP" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">Margherita DOP</h3>
             <p class="text-brand-dark/70 mb-4">San Marzano tomato, Buffalo mozzarella, fresh basil, extra virgin olive oil.</p>
@@ -304,7 +304,7 @@
         <!-- Diavola Piccante -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Spicy</div>
-          <img src="https://images.unsplash.com/photo-1628840042765-356cda07f4ee?q=80&w=1000" alt="Diavola Piccante" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1628840042765-356cda07f4ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Diavola Piccante" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">Spicy Devil</h3>
             <p class="text-brand-dark/70 mb-4">Tomato, mozzarella, spicy Calabrian salami, chili pepper, olives.</p>
@@ -315,7 +315,7 @@
         <!-- 4 Formaggi -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Premium</div>
-          <img src="https://images.unsplash.com/photo-1571407-918f48b1fe38?q=80&w=1000" alt="4 Formaggi" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1571407-918f48b1fe38?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="4 Cheeses" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">4 Cheeses</h3>
             <p class="text-brand-dark/70 mb-4">Mozzarella, Gorgonzola DOP, 24-month Parmigiano Reggiano, Pecorino.</p>
@@ -326,7 +326,7 @@
         <!-- Ortolana -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Veggie</div>
-          <img src="https://images.unsplash.com/photo-1571407-918f48b1fe38?q=80&w=1000" alt="Ortolana" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1511689915661-a8b0b8b8b8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Vegetarian" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">Vegetarian</h3>
             <p class="text-brand-dark/70 mb-4">Mozzarella, zucchini, grilled eggplant and peppers, cherry tomatoes.</p>
@@ -337,7 +337,7 @@
         <!-- Capricciosa -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Classic</div>
-          <img src="https://images.unsplash.com/photo-1628840042765-356cda07f4ee?q=80&w=1000" alt="Capricciosa" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1628840042765-356cda07f4ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Capricciosa" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">Capricciosa</h3>
             <p class="text-brand-dark/70 mb-4">Tomato, mozzarella, cooked ham, mushrooms, artichoke hearts, olives.</p>
@@ -348,7 +348,7 @@
         <!-- Calzone Reale -->
         <div class="bg-white rounded-lg overflow-hidden shadow-lg card-lift menu-item relative">
           <div class="ribbon">Special</div>
-          <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?q=80&w=1000" alt="Calzone Reale" class="w-full h-48 object-cover" />
+          <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Royal Calzone" class="w-full h-48 object-cover" loading="lazy" />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-brand-dark mb-2">Royal Calzone</h3>
             <p class="text-brand-dark/70 mb-4">Filled with ricotta, mozzarella, salami, tomato and pepper.</p>
